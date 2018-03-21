@@ -98,6 +98,13 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\AvailableDestination.cs" />
+    <Compile Include="Model\CheckIn.cs" />
+    <Compile Include="Model\Gate.cs" />
+    <Compile Include="Model\Luggage.cs" />
+    <Compile Include="Model\Plane.cs" />
+    <Compile Include="Model\PlaneProducer.cs" />
+    <Compile Include="Model\SortingMachine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
