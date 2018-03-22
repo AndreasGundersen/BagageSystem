@@ -9,17 +9,17 @@ namespace ComeFlyWithMe.Model
 	class Luggage
 	{
 		//Variables
-		private int serialNumber;
-		public Destination destination;
+		private uint serialNumber;
+		public string destination;
 
-		public Luggage(Destination destination, int serialNumber)
+		public Luggage(string destination, uint serialNumber)
 		{
 			Destination = destination;
 			SerialNumber = serialNumber;
 		}
 
 		//Property
-		public Destination Destination
+		public string Destination
 		{
 			get
 			{
@@ -32,7 +32,7 @@ namespace ComeFlyWithMe.Model
 		}
 
 		//Property
-		public int SerialNumber
+		public uint SerialNumber
 		{
 			get
 			{

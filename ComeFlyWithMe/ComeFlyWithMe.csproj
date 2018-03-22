@@ -101,6 +101,7 @@
     <Compile Include="Model\AvailableDestination.cs" />
     <Compile Include="Model\CheckIn.cs" />
     <Compile Include="Model\Gate.cs" />
+    <Compile Include="Model\IdGen.cs" />
     <Compile Include="Model\Luggage.cs" />
     <Compile Include="Model\Plane.cs" />
     <Compile Include="Model\PlaneProducer.cs" />

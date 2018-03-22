@@ -11,7 +11,7 @@ namespace ComeFlyWithMe.Model
 		//variables
 		private int gateNumber;
 
-		public Gate(int gateNumber, Destination destination)
+		public Gate(int gateNumber, string destination)
 		{
 			GateNumber = gateNumber;
 		}

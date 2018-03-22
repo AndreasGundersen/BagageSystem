@@ -16,10 +16,13 @@ namespace ComeFlyWithMe.ViewModel
 			Debug.WriteLine("Fucking shit fuck");
 
 			CheckIn checkIn1 = new CheckIn();
+            
 
 			Task t1 = new Task(checkIn1.GenerateLuggage);
+            Task t2 = new Task(checkIn1.GenerateLuggage);
 
 			t1.Start();
+            t2.Start();
 
 		}
 	}
