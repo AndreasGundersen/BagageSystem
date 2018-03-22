@@ -27,6 +27,7 @@ namespace ComeFlyWithMe.Model
 
         public CheckIn()
 		{
+            Destinations = destinations;
 		}
 
 		public void OpenCheckIn()

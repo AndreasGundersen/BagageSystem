@@ -11,12 +11,15 @@ namespace ComeFlyWithMe.ViewModel
 {
 	class ViewModel
 	{
-		public ViewModel()
+        string test = "Aben er en abe";
+        public ViewModel()
 		{
 			Debug.WriteLine("Fucking shit fuck");
 
 			CheckIn checkIn1 = new CheckIn();
+
             
+
 
 			Task t1 = new Task(checkIn1.GenerateLuggage);
             Task t2 = new Task(checkIn1.GenerateLuggage);
@@ -25,5 +28,7 @@ namespace ComeFlyWithMe.ViewModel
             t2.Start();
 
 		}
-	}
+
+        public string Test { get => test; set => test = value; }
+    }
 }

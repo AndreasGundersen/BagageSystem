@@ -13,8 +13,31 @@
     </Page.DataContext>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        
+        <Canvas x:ConnectionId='1' Name="canvas1">
+            <Image Source="Assets/Plane.jpg" Width="{Binding ActualWidth, ElementName=canvas1 }"></Image>
+            <Grid Width="1920" Height="1080">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="250" />
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Column="0" Grid.Row="0" Width="550" Height="750" Text="{Binding  }" FontSize="30">
 
+                </TextBlock>
+
+                <TextBlock Grid.Column="1" Grid.Row="0" Width="550" Height="750">
+
+                </TextBlock>
+
+                <TextBlock Grid.Column="2" Grid.Row="0" Width="550" Height="750">
+
+                </TextBlock>
+            </Grid>
+        </Canvas>
     </Grid>
 </Page>
 
