@@ -10,6 +10,11 @@ namespace ComeFlyWithMe.Model
 	{
 		public List<AvailableDestination> availableDestinations = new List<AvailableDestination>();
 
+		public AvailableDestination(List<AvailableDestination> availableDestinations)
+		{
+			this.availableDestinations = availableDestinations;
+		}
+
 		public void AddDestination()
 		{
 			//Add a destination to the availableDestinations List from GUI

@@ -9,19 +9,25 @@ namespace ComeFlyWithMe.Model
 	class Luggage
 	{
 		//Variables
-		private string luggageDestination;
 		private int serialNumber;
+		public Destination destination;
+
+		public Luggage(Destination destination, int serialNumber)
+		{
+			Destination = destination;
+			SerialNumber = serialNumber;
+		}
 
 		//Property
-		public string LuggageDestination
+		public Destination Destination
 		{
 			get
 			{
-				return luggageDestination;
+				return destination;
 			}
 			set
 			{
-				luggageDestination = value;
+				destination = value;
 			}
 		}
 

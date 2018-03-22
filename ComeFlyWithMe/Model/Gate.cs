@@ -10,7 +10,11 @@ namespace ComeFlyWithMe.Model
 	{
 		//variables
 		private int gateNumber;
-		private string gateDestination;
+
+		public Gate(int gateNumber, Destination destination)
+		{
+			GateNumber = gateNumber;
+		}
 
 		//Property
 		public int GateNumber
@@ -22,19 +26,6 @@ namespace ComeFlyWithMe.Model
 			set
 			{
 				gateNumber = value;
-			}
-		}
-
-		//Property
-		public string GateDestination
-		{
-			get
-			{
-				return gateDestination;
-			}
-			set
-			{
-				gateDestination = value;
 			}
 		}
 

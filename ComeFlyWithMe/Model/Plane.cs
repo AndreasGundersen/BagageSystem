@@ -14,6 +14,13 @@ namespace ComeFlyWithMe.Model
 		//Countdown for plane to leave
 		private int depatureTime;
 
+		public Plane(int planeID, string planeDestination, int depatureTime)
+		{
+			PlaneID = planeID;
+			PlaneDestination = planeDestination;
+			DepatureTime = depatureTime;
+		}
+
 		//Property
 		public int PlaneID
 		{

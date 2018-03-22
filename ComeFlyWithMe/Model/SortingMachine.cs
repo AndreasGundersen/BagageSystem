@@ -10,6 +10,11 @@ namespace ComeFlyWithMe.Model
 	{
 		Queue<Luggage> LuggageSort = new Queue<Luggage>();
 
+		public SortingMachine(Queue<Luggage> luggageSort)
+		{
+			LuggageSort = luggageSort;
+		}
+
 		public void GetLuggage()
 		{
 			//Get Luggage from Checkin.luggageQueue
