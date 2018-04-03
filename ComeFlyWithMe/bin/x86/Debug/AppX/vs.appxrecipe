@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\hqk200.UNICPH.000\source\repos\ComeFlyWithMe\BagageSystem\ComeFlyWithMe\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-03T10:29:37.731</Modified>
+      <Modified>2018-04-03T11:22:56.424</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\hqk200.UNICPH.000\source\repos\ComeFlyWithMe\BagageSystem\ComeFlyWithMe\bin\x86\Debug\ComeFlyWithMe.exe">
       <PackagePath>entrypoint\ComeFlyWithMe.exe</PackagePath>
-      <Modified>2018-04-03T10:29:35.321</Modified>
+      <Modified>2018-04-03T11:22:52.115</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\NuGetPackages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -495,6 +495,10 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2016-06-11T21:15:04.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hqk200.UNICPH.000\source\repos\ComeFlyWithMe\BagageSystem\ComeFlyWithMe\Assets\Fonts\Airport.otf">
+      <PackagePath>Assets\Fonts\Airport.otf</PackagePath>
+      <Modified>2018-04-03T11:11:43.359</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hqk200.UNICPH.000\source\repos\ComeFlyWithMe\BagageSystem\ComeFlyWithMe\Assets\Plane.jpg">
       <PackagePath>Assets\Plane.jpg</PackagePath>
       <Modified>2018-03-22T11:25:48.619</Modified>
@@ -539,7 +543,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hqk200.UNICPH.000\source\repos\ComeFlyWithMe\BagageSystem\ComeFlyWithMe\bin\x86\Debug\ComeFlyWithMe.xr.xml">
       <PackagePath>ComeFlyWithMe.xr.xml</PackagePath>
-      <Modified>2018-04-03T10:28:15.553</Modified>
+      <Modified>2018-04-03T11:22:51.053</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -548,11 +552,11 @@
     <AppxPackagedFile Include="C:\Users\hqk200.UNICPH.000\source\repos\ComeFlyWithMe\BagageSystem\ComeFlyWithMe\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-03T10:29:36.968</Modified>
+      <Modified>2018-04-03T11:22:55.183</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hqk200.UNICPH.000\source\repos\ComeFlyWithMe\BagageSystem\ComeFlyWithMe\bin\x86\Debug\Core\ComeFlyWithMe.exe">
       <PackagePath>ComeFlyWithMe.exe</PackagePath>
-      <Modified>2018-04-03T10:29:37.637</Modified>
+      <Modified>2018-04-03T11:22:56.331</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

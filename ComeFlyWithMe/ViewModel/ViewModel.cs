@@ -56,7 +56,7 @@ namespace ComeFlyWithMe.ViewModel
             await Windows.ApplicationModel.Core.CoreApplication.MainView.CoreWindow.Dispatcher.RunAsync(CoreDispatcherPriority.Normal,
     () =>
     {
-        Suitcases.Add(lea.Luggage);
+        Suitcases.Insert(0, lea.Luggage);
     });
         }
     }

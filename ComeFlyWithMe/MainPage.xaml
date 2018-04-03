@@ -25,14 +25,15 @@
                     <RowDefinition Height="*" />
                     <RowDefinition Height="250" />
                 </Grid.RowDefinitions>
-                <ListBox Grid.Column="0" Grid.Row="0" Width="550" Height="750" ItemsSource="{Binding Suitcases}" FontSize="30" SelectionChanged="ListBox_SelectionChanged">
+                
+                <ListBox Grid.Column="0" Grid.Row="0" Width="550" Height="750" ItemsSource="{Binding Suitcases}" Foreground="White"  SelectionChanged="ListBox_SelectionChanged" Background="Transparent">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
-                            <StackPanel >
-                                <TextBlock Text="Luggage to: "></TextBlock>
-                                <TextBlock Text="{Binding Destination}" />
-                                <TextBlock Text="With serialnumber: " />
-                                <TextBlock Text="{Binding SerialNumber}" />
+                            <StackPanel>
+                                <TextBlock FontFamily="Assets\Fonts\Airport.otf#Airport" FontSize="40" Text="Luggage to: "/>
+                                <TextBlock FontFamily="Assets\Fonts\Airport.otf#Airport" FontSize="40" Text="{Binding Destination}" />
+                                <TextBlock FontFamily="Assets\Fonts\Airport.otf#Airport" FontSize="40" Text="With serialnumber: " />
+                                <TextBlock FontFamily="Assets\Fonts\Airport.otf#Airport" FontSize="40" Text="{Binding SerialNumber}" />
                                 
                             </StackPanel>
                         </DataTemplate>
