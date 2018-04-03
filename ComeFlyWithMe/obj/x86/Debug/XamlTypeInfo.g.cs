@@ -180,21 +180,31 @@ namespace ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[6];
+            _typeNameTable = new string[11];
             _typeNameTable[0] = "ComeFlyWithMe.ViewModel.ViewModel";
-            _typeNameTable[1] = "Object";
-            _typeNameTable[2] = "String";
-            _typeNameTable[3] = "ComeFlyWithMe.MainPage";
-            _typeNameTable[4] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[5] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[1] = "ComeFlyWithMe.ViewModel.ViewModelBase";
+            _typeNameTable[2] = "Object";
+            _typeNameTable[3] = "System.Collections.ObjectModel.ObservableCollection`1<ComeFlyWithMe.Model.Luggage>";
+            _typeNameTable[4] = "System.Collections.ObjectModel.Collection`1<ComeFlyWithMe.Model.Luggage>";
+            _typeNameTable[5] = "ComeFlyWithMe.Model.Luggage";
+            _typeNameTable[6] = "String";
+            _typeNameTable[7] = "UInt32";
+            _typeNameTable[8] = "ComeFlyWithMe.MainPage";
+            _typeNameTable[9] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[10] = "Windows.UI.Xaml.Controls.UserControl";
 
-            _typeTable = new global::System.Type[6];
+            _typeTable = new global::System.Type[11];
             _typeTable[0] = typeof(global::ComeFlyWithMe.ViewModel.ViewModel);
-            _typeTable[1] = typeof(global::System.Object);
-            _typeTable[2] = typeof(global::System.String);
-            _typeTable[3] = typeof(global::ComeFlyWithMe.MainPage);
-            _typeTable[4] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[5] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[1] = typeof(global::ComeFlyWithMe.ViewModel.ViewModelBase);
+            _typeTable[2] = typeof(global::System.Object);
+            _typeTable[3] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::ComeFlyWithMe.Model.Luggage>);
+            _typeTable[4] = typeof(global::System.Collections.ObjectModel.Collection<global::ComeFlyWithMe.Model.Luggage>);
+            _typeTable[5] = typeof(global::ComeFlyWithMe.Model.Luggage);
+            _typeTable[6] = typeof(global::System.String);
+            _typeTable[7] = typeof(global::System.UInt32);
+            _typeTable[8] = typeof(global::ComeFlyWithMe.MainPage);
+            _typeTable[9] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[10] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -230,7 +240,21 @@ namespace ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo
         }
 
         private object Activate_0_ViewModel() { return new global::ComeFlyWithMe.ViewModel.ViewModel(); }
-        private object Activate_3_MainPage() { return new global::ComeFlyWithMe.MainPage(); }
+        private object Activate_3_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::ComeFlyWithMe.Model.Luggage>(); }
+        private object Activate_4_Collection() { return new global::System.Collections.ObjectModel.Collection<global::ComeFlyWithMe.Model.Luggage>(); }
+        private object Activate_8_MainPage() { return new global::ComeFlyWithMe.MainPage(); }
+        private void VectorAdd_3_ObservableCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::ComeFlyWithMe.Model.Luggage>)instance;
+            var newItem = (global::ComeFlyWithMe.Model.Luggage)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_4_Collection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::ComeFlyWithMe.Model.Luggage>)instance;
+            var newItem = (global::ComeFlyWithMe.Model.Luggage)item;
+            collection.Add(newItem);
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -243,33 +267,65 @@ namespace ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo
             {
 
             case 0:   //  ComeFlyWithMe.ViewModel.ViewModel
-                userType = new global::ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType = new global::ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("ComeFlyWithMe.ViewModel.ViewModelBase"));
                 userType.Activator = Activate_0_ViewModel;
-                userType.AddMemberName("Test");
+                userType.AddMemberName("Suitcases");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 1:   //  Object
+            case 1:   //  ComeFlyWithMe.ViewModel.ViewModelBase
+                userType = new global::ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 2:   //  Object
                 xamlType = new global::ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 2:   //  String
+            case 3:   //  System.Collections.ObjectModel.ObservableCollection`1<ComeFlyWithMe.Model.Luggage>
+                userType = new global::ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<ComeFlyWithMe.Model.Luggage>"));
+                userType.CollectionAdd = VectorAdd_3_ObservableCollection;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 4:   //  System.Collections.ObjectModel.Collection`1<ComeFlyWithMe.Model.Luggage>
+                userType = new global::ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_4_Collection;
+                userType.CollectionAdd = VectorAdd_4_Collection;
+                xamlType = userType;
+                break;
+
+            case 5:   //  ComeFlyWithMe.Model.Luggage
+                userType = new global::ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.AddMemberName("Destination");
+                userType.AddMemberName("SerialNumber");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 6:   //  String
                 xamlType = new global::ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  ComeFlyWithMe.MainPage
+            case 7:   //  UInt32
+                xamlType = new global::ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 8:   //  ComeFlyWithMe.MainPage
                 userType = new global::ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_MainPage;
+                userType.Activator = Activate_8_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  Windows.UI.Xaml.Controls.Page
+            case 9:   //  Windows.UI.Xaml.Controls.Page
                 xamlType = new global::ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 5:   //  Windows.UI.Xaml.Controls.UserControl
+            case 10:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
@@ -277,15 +333,35 @@ namespace ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo
         }
 
 
-        private object get_0_ViewModel_Test(object instance)
+        private object get_0_ViewModel_Suitcases(object instance)
         {
             var that = (global::ComeFlyWithMe.ViewModel.ViewModel)instance;
-            return that.Test;
+            return that.Suitcases;
         }
-        private void set_0_ViewModel_Test(object instance, object Value)
+        private void set_0_ViewModel_Suitcases(object instance, object Value)
         {
             var that = (global::ComeFlyWithMe.ViewModel.ViewModel)instance;
-            that.Test = (global::System.String)Value;
+            that.Suitcases = (global::System.Collections.ObjectModel.ObservableCollection<global::ComeFlyWithMe.Model.Luggage>)Value;
+        }
+        private object get_1_Luggage_Destination(object instance)
+        {
+            var that = (global::ComeFlyWithMe.Model.Luggage)instance;
+            return that.Destination;
+        }
+        private void set_1_Luggage_Destination(object instance, object Value)
+        {
+            var that = (global::ComeFlyWithMe.Model.Luggage)instance;
+            that.Destination = (global::System.String)Value;
+        }
+        private object get_2_Luggage_SerialNumber(object instance)
+        {
+            var that = (global::ComeFlyWithMe.Model.Luggage)instance;
+            return that.SerialNumber;
+        }
+        private void set_2_Luggage_SerialNumber(object instance, object Value)
+        {
+            var that = (global::ComeFlyWithMe.Model.Luggage)instance;
+            that.SerialNumber = (global::System.UInt32)Value;
         }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
@@ -295,11 +371,23 @@ namespace ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo
 
             switch (longMemberName)
             {
-            case "ComeFlyWithMe.ViewModel.ViewModel.Test":
+            case "ComeFlyWithMe.ViewModel.ViewModel.Suitcases":
                 userType = (global::ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ComeFlyWithMe.ViewModel.ViewModel");
-                xamlMember = new global::ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo.XamlMember(this, "Test", "String");
-                xamlMember.Getter = get_0_ViewModel_Test;
-                xamlMember.Setter = set_0_ViewModel_Test;
+                xamlMember = new global::ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo.XamlMember(this, "Suitcases", "System.Collections.ObjectModel.ObservableCollection`1<ComeFlyWithMe.Model.Luggage>");
+                xamlMember.Getter = get_0_ViewModel_Suitcases;
+                xamlMember.Setter = set_0_ViewModel_Suitcases;
+                break;
+            case "ComeFlyWithMe.Model.Luggage.Destination":
+                userType = (global::ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ComeFlyWithMe.Model.Luggage");
+                xamlMember = new global::ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo.XamlMember(this, "Destination", "String");
+                xamlMember.Getter = get_1_Luggage_Destination;
+                xamlMember.Setter = set_1_Luggage_Destination;
+                break;
+            case "ComeFlyWithMe.Model.Luggage.SerialNumber":
+                userType = (global::ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ComeFlyWithMe.Model.Luggage");
+                xamlMember = new global::ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo.XamlMember(this, "SerialNumber", "UInt32");
+                xamlMember.Getter = get_2_Luggage_SerialNumber;
+                xamlMember.Setter = set_2_Luggage_SerialNumber;
                 break;
             }
             return xamlMember;

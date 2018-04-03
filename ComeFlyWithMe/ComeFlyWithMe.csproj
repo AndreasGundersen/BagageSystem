@@ -103,11 +103,13 @@
     <Compile Include="Model\Gate.cs" />
     <Compile Include="Model\IdGen.cs" />
     <Compile Include="Model\Luggage.cs" />
+    <Compile Include="Model\LuggageEventArgs.cs" />
     <Compile Include="Model\Plane.cs" />
     <Compile Include="Model\PlaneProducer.cs" />
     <Compile Include="Model\SortingMachine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModel\ViewModel.cs" />
+    <Compile Include="ViewModel\ViewModelBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">

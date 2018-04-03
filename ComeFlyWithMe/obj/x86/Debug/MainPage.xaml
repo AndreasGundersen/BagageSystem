@@ -13,7 +13,7 @@
     </Page.DataContext>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Canvas Name="canvas1">
+        <Canvas x:ConnectionId='1' Name="canvas1">
             <Image Source="Assets/Plane.jpg" Width="{Binding ActualWidth, ElementName=canvas1 }"></Image>
             <Grid Width="1920" Height="1080">
                 <Grid.ColumnDefinitions>
@@ -25,7 +25,7 @@
                     <RowDefinition Height="*" />
                     <RowDefinition Height="250" />
                 </Grid.RowDefinitions>
-                <ListBox Grid.Column="0" Grid.Row="0" Width="550" Height="750" ItemsSource="{Binding Suitcases}" FontSize="30" SelectionChanged="ListBox_SelectionChanged">
+                <ListBox x:ConnectionId='2' Grid.Column="0" Grid.Row="0" Width="550" Height="750" ItemsSource="{Binding Suitcases}" FontSize="30"                                            >
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel >
@@ -50,3 +50,4 @@
         </Canvas>
     </Grid>
 </Page>
+
