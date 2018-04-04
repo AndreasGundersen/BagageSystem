@@ -108,8 +108,8 @@
     <Compile Include="Model\PlaneProducer.cs" />
     <Compile Include="Model\SortingMachine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewModel\ViewModel.cs" />
-    <Compile Include="ViewModel\ViewModelBase.cs" />
+    <Compile Include="Modelview\ViewModel.cs" />
+    <Compile Include="Modelview\ViewModelBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">

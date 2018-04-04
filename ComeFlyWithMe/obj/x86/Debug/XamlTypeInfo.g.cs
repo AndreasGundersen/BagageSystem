@@ -181,8 +181,8 @@ namespace ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo
         private void InitTypeTables()
         {
             _typeNameTable = new string[11];
-            _typeNameTable[0] = "ComeFlyWithMe.ViewModel.ViewModel";
-            _typeNameTable[1] = "ComeFlyWithMe.ViewModel.ViewModelBase";
+            _typeNameTable[0] = "ComeFlyWithMe.Modelview.ViewModel";
+            _typeNameTable[1] = "ComeFlyWithMe.Modelview.ViewModelBase";
             _typeNameTable[2] = "Object";
             _typeNameTable[3] = "System.Collections.ObjectModel.ObservableCollection`1<ComeFlyWithMe.Model.Luggage>";
             _typeNameTable[4] = "System.Collections.ObjectModel.Collection`1<ComeFlyWithMe.Model.Luggage>";
@@ -194,8 +194,8 @@ namespace ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo
             _typeNameTable[10] = "Windows.UI.Xaml.Controls.UserControl";
 
             _typeTable = new global::System.Type[11];
-            _typeTable[0] = typeof(global::ComeFlyWithMe.ViewModel.ViewModel);
-            _typeTable[1] = typeof(global::ComeFlyWithMe.ViewModel.ViewModelBase);
+            _typeTable[0] = typeof(global::ComeFlyWithMe.Modelview.ViewModel);
+            _typeTable[1] = typeof(global::ComeFlyWithMe.Modelview.ViewModelBase);
             _typeTable[2] = typeof(global::System.Object);
             _typeTable[3] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::ComeFlyWithMe.Model.Luggage>);
             _typeTable[4] = typeof(global::System.Collections.ObjectModel.Collection<global::ComeFlyWithMe.Model.Luggage>);
@@ -239,7 +239,7 @@ namespace ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_ViewModel() { return new global::ComeFlyWithMe.ViewModel.ViewModel(); }
+        private object Activate_0_ViewModel() { return new global::ComeFlyWithMe.Modelview.ViewModel(); }
         private object Activate_3_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::ComeFlyWithMe.Model.Luggage>(); }
         private object Activate_4_Collection() { return new global::System.Collections.ObjectModel.Collection<global::ComeFlyWithMe.Model.Luggage>(); }
         private object Activate_8_MainPage() { return new global::ComeFlyWithMe.MainPage(); }
@@ -266,15 +266,15 @@ namespace ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  ComeFlyWithMe.ViewModel.ViewModel
-                userType = new global::ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("ComeFlyWithMe.ViewModel.ViewModelBase"));
+            case 0:   //  ComeFlyWithMe.Modelview.ViewModel
+                userType = new global::ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("ComeFlyWithMe.Modelview.ViewModelBase"));
                 userType.Activator = Activate_0_ViewModel;
                 userType.AddMemberName("Suitcases");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 1:   //  ComeFlyWithMe.ViewModel.ViewModelBase
+            case 1:   //  ComeFlyWithMe.Modelview.ViewModelBase
                 userType = new global::ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsLocalType();
                 xamlType = userType;
@@ -335,12 +335,12 @@ namespace ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo
 
         private object get_0_ViewModel_Suitcases(object instance)
         {
-            var that = (global::ComeFlyWithMe.ViewModel.ViewModel)instance;
+            var that = (global::ComeFlyWithMe.Modelview.ViewModel)instance;
             return that.Suitcases;
         }
         private void set_0_ViewModel_Suitcases(object instance, object Value)
         {
-            var that = (global::ComeFlyWithMe.ViewModel.ViewModel)instance;
+            var that = (global::ComeFlyWithMe.Modelview.ViewModel)instance;
             that.Suitcases = (global::System.Collections.ObjectModel.ObservableCollection<global::ComeFlyWithMe.Model.Luggage>)Value;
         }
         private object get_1_Luggage_Destination(object instance)
@@ -371,8 +371,8 @@ namespace ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo
 
             switch (longMemberName)
             {
-            case "ComeFlyWithMe.ViewModel.ViewModel.Suitcases":
-                userType = (global::ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ComeFlyWithMe.ViewModel.ViewModel");
+            case "ComeFlyWithMe.Modelview.ViewModel.Suitcases":
+                userType = (global::ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ComeFlyWithMe.Modelview.ViewModel");
                 xamlMember = new global::ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo.XamlMember(this, "Suitcases", "System.Collections.ObjectModel.ObservableCollection`1<ComeFlyWithMe.Model.Luggage>");
                 xamlMember.Getter = get_0_ViewModel_Suitcases;
                 xamlMember.Setter = set_0_ViewModel_Suitcases;

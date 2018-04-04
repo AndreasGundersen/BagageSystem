@@ -336,7 +336,6 @@ C:\Luggagesorter\BagageSystem\ComeFlyWithMe\bin\x86\Debug\System.Xml.ReaderWrite
 C:\Luggagesorter\BagageSystem\ComeFlyWithMe\bin\x86\Debug\System.Xml.XDocument.dll
 C:\Luggagesorter\BagageSystem\ComeFlyWithMe\bin\x86\Debug\System.Xml.XmlDocument.dll
 C:\Luggagesorter\BagageSystem\ComeFlyWithMe\bin\x86\Debug\System.Xml.XmlSerializer.dll
-C:\Luggagesorter\BagageSystem\ComeFlyWithMe\obj\x86\Debug\ComeFlyWithMe.csprojResolveAssemblyReference.cache
 C:\Luggagesorter\BagageSystem\ComeFlyWithMe\obj\x86\Debug\App.g.i.cs
 C:\Luggagesorter\BagageSystem\ComeFlyWithMe\obj\x86\Debug\App.g.cs
 C:\Luggagesorter\BagageSystem\ComeFlyWithMe\obj\x86\Debug\MainPage.g.i.cs
@@ -640,3 +639,4 @@ C:\Users\hqk200.UNICPH.000\source\repos\ComeFlyWithMe\BagageSystem\ComeFlyWithMe
 C:\Users\hqk200.UNICPH.000\source\repos\ComeFlyWithMe\BagageSystem\ComeFlyWithMe\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\hqk200.UNICPH.000\source\repos\ComeFlyWithMe\BagageSystem\ComeFlyWithMe\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\hqk200.UNICPH.000\source\repos\ComeFlyWithMe\BagageSystem\ComeFlyWithMe\obj\x86\Debug\ProjectArchitectures.txt
+C:\Luggagesorter\BagageSystem\ComeFlyWithMe\obj\x86\Debug\ComeFlyWithMe.csprojResolveAssemblyReference.cache

@@ -6,19 +6,22 @@ using System.Threading.Tasks;
 
 namespace ComeFlyWithMe.Model
 {
-    static class IdGen
-    {
-        static uint id = 0;
-        static object idKey = new object();
+	static class IdGen
+	{
+		//Variable for ID
+		static uint id = 0;
+		//Creates a idKey Object
+		static object idKey = new object();
 
-        public static uint Id { get => id; set => id = value; }
+		public static uint Id { get => id; set => id = value; }
 
-        public static uint NewId()
-        {
-            lock (idKey)
-            {
-                return Id++;
-            }
-        }
-    }
+		//Method that gives the next available ID
+		public static uint NewId()
+		{
+			lock (idKey)
+			{
+				return Id++;
+			}
+		}
+	}
 }

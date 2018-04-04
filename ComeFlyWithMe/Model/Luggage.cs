@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace ComeFlyWithMe.Model
 {
-	class Luggage
+	public class Luggage
 	{
 		//Variables
 		private uint serialNumber;
 		public string destination;
 
+		//Constucter for Luggage
 		public Luggage(string destination, uint serialNumber)
 		{
 			Destination = destination;

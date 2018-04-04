@@ -8,6 +8,7 @@ namespace ComeFlyWithMe.Model
 {
 	class AvailableDestination
 	{
+		//List of availableDestinations so we can add new destinations from the GUI
 		public List<AvailableDestination> availableDestinations = new List<AvailableDestination>();
 
 		public AvailableDestination(List<AvailableDestination> availableDestinations)

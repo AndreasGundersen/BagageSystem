@@ -2,7 +2,7 @@
     x:Class="ComeFlyWithMe.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:ViewModel="using:ComeFlyWithMe.ViewModel"
+    xmlns:ViewModel="using:ComeFlyWithMe.Modelview"
     xmlns:local="using:ComeFlyWithMe"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -25,16 +25,15 @@
                     <RowDefinition Height="*" />
                     <RowDefinition Height="250" />
                 </Grid.RowDefinitions>
-                
+
                 <ListBox Grid.Column="0" Grid.Row="0" Width="550" Height="750" ItemsSource="{Binding Suitcases}" Foreground="White"  SelectionChanged="ListBox_SelectionChanged" Background="Transparent">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel>
-                                <TextBlock FontFamily="Assets\Fonts\Airport.otf#Airport" FontSize="40" Text="Luggage to: "/>
-                                <TextBlock FontFamily="Assets\Fonts\Airport.otf#Airport" FontSize="40" Text="{Binding Destination}" />
-                                <TextBlock FontFamily="Assets\Fonts\Airport.otf#Airport" FontSize="40" Text="With serialnumber: " />
-                                <TextBlock FontFamily="Assets\Fonts\Airport.otf#Airport" FontSize="40" Text="{Binding SerialNumber}" />
-                                
+                                <TextBlock FontFamily="Assets\Fonts\Airport.otf#Airport" FontSize="30" Text="Luggage to: "/>
+                                <TextBlock FontFamily="Assets\Fonts\Airport.otf#Airport" FontSize="30" Text="{Binding Destination}" />
+                                <TextBlock FontFamily="Assets\Fonts\Airport.otf#Airport" FontSize="30" Text="With serialnumber: " />
+                                <TextBlock FontFamily="Assets\Fonts\Airport.otf#Airport" FontSize="30" Text="{Binding SerialNumber}" />
                             </StackPanel>
                         </DataTemplate>
                     </ListBox.ItemTemplate>

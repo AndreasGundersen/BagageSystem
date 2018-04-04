@@ -8,7 +8,7 @@ namespace ComeFlyWithMe.Model
 {
 	class SortingMachine
 	{
-		Queue<Luggage> LuggageSort = new Queue<Luggage>();
+		public Queue<Luggage> LuggageSort = new Queue<Luggage>();
 
 		public SortingMachine(Queue<Luggage> luggageSort)
 		{
