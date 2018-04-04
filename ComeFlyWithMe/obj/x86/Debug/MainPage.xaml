@@ -18,32 +18,75 @@
             <Grid Width="1920" Height="1080">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="140" />
+                    <ColumnDefinition Width="140" />
+                    <ColumnDefinition Width="140" />
+                    <ColumnDefinition Width="140" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
                     <RowDefinition Height="*" />
                     <RowDefinition Height="250" />
                 </Grid.RowDefinitions>
+                <TextBlock Margin="12" Grid.Column="1" Grid.Row="0" Foreground="White" FontFamily="Assets\Fonts\Airport.otf#Airport" FontSize="20" Text="Sorted for Bornholm"/>
+                <TextBlock Margin="12" Grid.Column="2" Grid.Row="0" Foreground="White" FontFamily="Assets\Fonts\Airport.otf#Airport" FontSize="20" Text="Sorted for Kairo"/>
+                <TextBlock Margin="12" Grid.Column="3" Grid.Row="0" Foreground="White" FontFamily="Assets\Fonts\Airport.otf#Airport" FontSize="20" Text="Sorted for Paris"/>
+                <TextBlock Margin="12" Grid.Column="4" Grid.Row="0" Foreground="White" FontFamily="Assets\Fonts\Airport.otf#Airport" FontSize="20" Text="Sorted for Rom"/>
+                <ListBox x:ConnectionId='2' HorizontalContentAlignment="Center" Grid.Column="0" Grid.Row="1" Width="550" Height="750" ItemsSource="{Binding Suitcases}" Foreground="White"                                              Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                                <TextBlock TextAlignment="Center" HorizontalAlignment="Center" FontFamily="Assets\Fonts\Airport.otf#Airport" FontSize="30" Text="Luggage to: " VerticalAlignment="Center"/>
+                                <TextBlock TextAlignment="Center" HorizontalAlignment="Center" FontFamily="Assets\Fonts\Airport.otf#Airport" FontSize="30" Text="{Binding Destination}" VerticalAlignment="Center" />
+                                <TextBlock TextAlignment="Center" HorizontalAlignment="Center" FontFamily="Assets\Fonts\Airport.otf#Airport" FontSize="30" Text="With serialnumber: " VerticalAlignment="Center" />
+                                <TextBlock TextAlignment="Center" HorizontalAlignment="Center" FontFamily="Assets\Fonts\Airport.otf#Airport" FontSize="30" Text="{Binding SerialNumber}" VerticalAlignment="Center" />
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
 
-                <ListBox x:ConnectionId='2' Grid.Column="0" Grid.Row="0" Width="550" Height="750" ItemsSource="{Binding Suitcases}" Foreground="White"                                              Background="Transparent">
+                <ListBox x:ConnectionId='3' Grid.Column="1" Grid.Row="1" ItemsSource="{Binding SortedSuitcasesBornholm}" Foreground="White"                                              Background="Transparent">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel>
-                                <TextBlock FontFamily="Assets\Fonts\Airport.otf#Airport" FontSize="30" Text="Luggage to: "/>
-                                <TextBlock FontFamily="Assets\Fonts\Airport.otf#Airport" FontSize="30" Text="{Binding Destination}" />
-                                <TextBlock FontFamily="Assets\Fonts\Airport.otf#Airport" FontSize="30" Text="With serialnumber: " />
                                 <TextBlock FontFamily="Assets\Fonts\Airport.otf#Airport" FontSize="30" Text="{Binding SerialNumber}" />
                             </StackPanel>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
                 </ListBox>
 
-                <TextBlock Grid.Column="1" Grid.Row="0" Width="550" Height="750">
+                <ListBox x:ConnectionId='4' Grid.Column="2" Grid.Row="1" ItemsSource="{Binding SortedSuitcasesKairo}" Foreground="White"                                              Background="Transparent">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <TextBlock FontFamily="Assets\Fonts\Airport.otf#Airport" FontSize="30" Text="{Binding SerialNumber}" />
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
 
-                </TextBlock>
+                <ListBox x:ConnectionId='5' Grid.Column="3" Grid.Row="1" ItemsSource="{Binding SortedSuitcasesParis}" Foreground="White"                                              Background="Transparent">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <TextBlock FontFamily="Assets\Fonts\Airport.otf#Airport" FontSize="30" Text="{Binding SerialNumber}" />
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
 
-                <TextBlock Grid.Column="2" Grid.Row="0" Width="550" Height="750">
+                <ListBox x:ConnectionId='6' Grid.Column="4" Grid.Row="1" ItemsSource="{Binding SortedSuitcasesRom}" Foreground="White"                                              Background="Transparent">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <TextBlock FontFamily="Assets\Fonts\Airport.otf#Airport" FontSize="30" Text="{Binding SerialNumber}" />
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+
+                <TextBlock Grid.Column="2" Grid.Row="1" Width="550" Height="750">
 
                 </TextBlock>
             </Grid>

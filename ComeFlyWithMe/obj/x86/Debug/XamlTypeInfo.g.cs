@@ -270,6 +270,10 @@ namespace ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo
                 userType = new global::ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("ComeFlyWithMe.Modelview.ViewModelBase"));
                 userType.Activator = Activate_0_ViewModel;
                 userType.AddMemberName("Suitcases");
+                userType.AddMemberName("SortedSuitcasesBornholm");
+                userType.AddMemberName("SortedSuitcasesKairo");
+                userType.AddMemberName("SortedSuitcasesParis");
+                userType.AddMemberName("SortedSuitcasesRom");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -363,6 +367,46 @@ namespace ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo
             var that = (global::ComeFlyWithMe.Model.Luggage)instance;
             that.SerialNumber = (global::System.UInt32)Value;
         }
+        private object get_3_ViewModel_SortedSuitcasesBornholm(object instance)
+        {
+            var that = (global::ComeFlyWithMe.Modelview.ViewModel)instance;
+            return that.SortedSuitcasesBornholm;
+        }
+        private void set_3_ViewModel_SortedSuitcasesBornholm(object instance, object Value)
+        {
+            var that = (global::ComeFlyWithMe.Modelview.ViewModel)instance;
+            that.SortedSuitcasesBornholm = (global::System.Collections.ObjectModel.ObservableCollection<global::ComeFlyWithMe.Model.Luggage>)Value;
+        }
+        private object get_4_ViewModel_SortedSuitcasesKairo(object instance)
+        {
+            var that = (global::ComeFlyWithMe.Modelview.ViewModel)instance;
+            return that.SortedSuitcasesKairo;
+        }
+        private void set_4_ViewModel_SortedSuitcasesKairo(object instance, object Value)
+        {
+            var that = (global::ComeFlyWithMe.Modelview.ViewModel)instance;
+            that.SortedSuitcasesKairo = (global::System.Collections.ObjectModel.ObservableCollection<global::ComeFlyWithMe.Model.Luggage>)Value;
+        }
+        private object get_5_ViewModel_SortedSuitcasesParis(object instance)
+        {
+            var that = (global::ComeFlyWithMe.Modelview.ViewModel)instance;
+            return that.SortedSuitcasesParis;
+        }
+        private void set_5_ViewModel_SortedSuitcasesParis(object instance, object Value)
+        {
+            var that = (global::ComeFlyWithMe.Modelview.ViewModel)instance;
+            that.SortedSuitcasesParis = (global::System.Collections.ObjectModel.ObservableCollection<global::ComeFlyWithMe.Model.Luggage>)Value;
+        }
+        private object get_6_ViewModel_SortedSuitcasesRom(object instance)
+        {
+            var that = (global::ComeFlyWithMe.Modelview.ViewModel)instance;
+            return that.SortedSuitcasesRom;
+        }
+        private void set_6_ViewModel_SortedSuitcasesRom(object instance, object Value)
+        {
+            var that = (global::ComeFlyWithMe.Modelview.ViewModel)instance;
+            that.SortedSuitcasesRom = (global::System.Collections.ObjectModel.ObservableCollection<global::ComeFlyWithMe.Model.Luggage>)Value;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
@@ -388,6 +432,30 @@ namespace ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo
                 xamlMember = new global::ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo.XamlMember(this, "SerialNumber", "UInt32");
                 xamlMember.Getter = get_2_Luggage_SerialNumber;
                 xamlMember.Setter = set_2_Luggage_SerialNumber;
+                break;
+            case "ComeFlyWithMe.Modelview.ViewModel.SortedSuitcasesBornholm":
+                userType = (global::ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ComeFlyWithMe.Modelview.ViewModel");
+                xamlMember = new global::ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo.XamlMember(this, "SortedSuitcasesBornholm", "System.Collections.ObjectModel.ObservableCollection`1<ComeFlyWithMe.Model.Luggage>");
+                xamlMember.Getter = get_3_ViewModel_SortedSuitcasesBornholm;
+                xamlMember.Setter = set_3_ViewModel_SortedSuitcasesBornholm;
+                break;
+            case "ComeFlyWithMe.Modelview.ViewModel.SortedSuitcasesKairo":
+                userType = (global::ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ComeFlyWithMe.Modelview.ViewModel");
+                xamlMember = new global::ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo.XamlMember(this, "SortedSuitcasesKairo", "System.Collections.ObjectModel.ObservableCollection`1<ComeFlyWithMe.Model.Luggage>");
+                xamlMember.Getter = get_4_ViewModel_SortedSuitcasesKairo;
+                xamlMember.Setter = set_4_ViewModel_SortedSuitcasesKairo;
+                break;
+            case "ComeFlyWithMe.Modelview.ViewModel.SortedSuitcasesParis":
+                userType = (global::ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ComeFlyWithMe.Modelview.ViewModel");
+                xamlMember = new global::ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo.XamlMember(this, "SortedSuitcasesParis", "System.Collections.ObjectModel.ObservableCollection`1<ComeFlyWithMe.Model.Luggage>");
+                xamlMember.Getter = get_5_ViewModel_SortedSuitcasesParis;
+                xamlMember.Setter = set_5_ViewModel_SortedSuitcasesParis;
+                break;
+            case "ComeFlyWithMe.Modelview.ViewModel.SortedSuitcasesRom":
+                userType = (global::ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ComeFlyWithMe.Modelview.ViewModel");
+                xamlMember = new global::ComeFlyWithMe.ComeFlyWithMe_XamlTypeInfo.XamlMember(this, "SortedSuitcasesRom", "System.Collections.ObjectModel.ObservableCollection`1<ComeFlyWithMe.Model.Luggage>");
+                xamlMember.Getter = get_6_ViewModel_SortedSuitcasesRom;
+                xamlMember.Setter = set_6_ViewModel_SortedSuitcasesRom;
                 break;
             }
             return xamlMember;

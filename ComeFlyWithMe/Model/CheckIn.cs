@@ -66,7 +66,7 @@ namespace ComeFlyWithMe.Model
                 
                
 				//await task to wait with more luggage
-				await Task.Delay(TimeSpan.FromSeconds(0.5));
+				await Task.Delay(TimeSpan.FromSeconds(1));
 
 
 			}
