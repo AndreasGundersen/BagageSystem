@@ -8,12 +8,12 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Page.DataContext>
+    <!--<Page.DataContext>
         <ViewModel:ViewModel/>
-    </Page.DataContext>
+    </Page.DataContext>-->
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Canvas Name="canvas1">
+        <Canvas x:ConnectionId='1' Name="canvas1">
             <Image Source="Assets/Plane.jpg" Width="{Binding ActualWidth, ElementName=canvas1 }"></Image>
             <Grid Width="1920" Height="1080">
                 <Grid.ColumnDefinitions>
@@ -33,7 +33,7 @@
                 <TextBlock Margin="12" Grid.Column="2" Grid.Row="0" Foreground="White" FontFamily="Assets\Fonts\Airport.otf#Airport" FontSize="20" Text="Sorted for Kairo"/>
                 <TextBlock Margin="12" Grid.Column="3" Grid.Row="0" Foreground="White" FontFamily="Assets\Fonts\Airport.otf#Airport" FontSize="20" Text="Sorted for Paris"/>
                 <TextBlock Margin="12" Grid.Column="4" Grid.Row="0" Foreground="White" FontFamily="Assets\Fonts\Airport.otf#Airport" FontSize="20" Text="Sorted for Rom"/>
-                <ListBox HorizontalContentAlignment="Center" Grid.Column="0" Grid.Row="1" Width="550" Height="750" ItemsSource="{Binding Suitcases}" Foreground="White"  SelectionChanged="ListBox_SelectionChanged" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <ListBox x:ConnectionId='2' HorizontalContentAlignment="Center" Grid.Column="0" Grid.Row="1" Width="550" Height="750" ItemsSource="{Binding Suitcases}" Foreground="White"                                              Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
@@ -46,7 +46,7 @@
                     </ListBox.ItemTemplate>
                 </ListBox>
 
-                <ListBox Grid.Column="1" Grid.Row="1" ItemsSource="{Binding SortedSuitcasesBornholm}" Foreground="White"  SelectionChanged="ListBox_SelectionChanged" Background="Transparent">
+                <ListBox x:ConnectionId='3' Grid.Column="1" Grid.Row="1" ItemsSource="{Binding SortedSuitcasesBornholm}" Foreground="White"                                              Background="Transparent">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel>
@@ -56,7 +56,7 @@
                     </ListBox.ItemTemplate>
                 </ListBox>
 
-                <ListBox Grid.Column="2" Grid.Row="1" ItemsSource="{Binding SortedSuitcasesKairo}" Foreground="White"  SelectionChanged="ListBox_SelectionChanged" Background="Transparent">
+                <ListBox x:ConnectionId='4' Grid.Column="2" Grid.Row="1" ItemsSource="{Binding SortedSuitcasesKairo}" Foreground="White"                                              Background="Transparent">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel>
@@ -66,7 +66,7 @@
                     </ListBox.ItemTemplate>
                 </ListBox>
 
-                <ListBox Grid.Column="3" Grid.Row="1" ItemsSource="{Binding SortedSuitcasesParis}" Foreground="White"  SelectionChanged="ListBox_SelectionChanged" Background="Transparent">
+                <ListBox x:ConnectionId='5' Grid.Column="3" Grid.Row="1" ItemsSource="{Binding SortedSuitcasesParis}" Foreground="White"                                              Background="Transparent">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel>
@@ -76,7 +76,7 @@
                     </ListBox.ItemTemplate>
                 </ListBox>
 
-                <ListBox Grid.Column="4" Grid.Row="1" ItemsSource="{Binding SortedSuitcasesRom}" Foreground="White"  SelectionChanged="ListBox_SelectionChanged" Background="Transparent">
+                <ListBox x:ConnectionId='6' Grid.Column="4" Grid.Row="1" ItemsSource="{Binding SortedSuitcasesRom}" Foreground="White"                                              Background="Transparent">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel>
@@ -93,3 +93,4 @@
         </Canvas>
     </Grid>
 </Page>
+

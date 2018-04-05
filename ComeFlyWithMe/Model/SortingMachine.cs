@@ -63,7 +63,7 @@ namespace ComeFlyWithMe.Model
                 }
                 SuitcaseSorted?.Invoke(this, new LuggageEventArgs(luggage));
 
-                await Task.Delay(1000);
+                await Task.Delay(TimeSpan.FromSeconds(1));
             }
         }
 
