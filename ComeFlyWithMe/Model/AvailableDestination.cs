@@ -8,15 +8,17 @@ namespace ComeFlyWithMe.Model
 {
 	class AvailableDestination
 	{
-		//List of availableDestinations so we can add new destinations from the GUI
-		public List<AvailableDestination> availableDestinations = new List<AvailableDestination>();
+        //List of availableDestinations so we can add new destinations from the GUI
+        private List<AvailableDestination> availableDestinations = new List<AvailableDestination>();
+        public List<AvailableDestination> AvailableDestinations { get => availableDestinations; set => availableDestinations = value; }
 
-		public AvailableDestination(List<AvailableDestination> availableDestinations)
+        public AvailableDestination(List<AvailableDestination> aDestinations)
 		{
-			this.availableDestinations = availableDestinations;
+			AvailableDestinations = aDestinations;
 		}
 
-		public void AddDestination()
+
+        public void AddDestination()
 		{
 			//Add a destination to the availableDestinations List from GUI
 		}
