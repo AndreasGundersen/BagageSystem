@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace ComeFlyWithMe.Model
 {
-	class SortingMachine
-	{
-		public Queue<Luggage> LuggageSort = new Queue<Luggage>();
+    class SortingMachine
+    {
+        public Queue<Luggage> LuggageSort = new Queue<Luggage>();
 
         public Queue<Luggage> Bornholm = new Queue<Luggage>();
         public Queue<Luggage> Kairo = new Queue<Luggage>();
@@ -18,13 +18,13 @@ namespace ComeFlyWithMe.Model
 
 
         public SortingMachine(Queue<Luggage> luggageSort)
-		{
-			LuggageSort = luggageSort;
-		}
+        {
+            LuggageSort = luggageSort;
+        }
 
         public event EventHandler SuitcaseSorted;
 
-        public async void Sort ()
+        public async void Sort()
         {
             while (true)
             {
@@ -37,39 +37,43 @@ namespace ComeFlyWithMe.Model
                 }
                 luggage = LuggageSort.Dequeue();
                 Debug.WriteLine("Luggage taken from sorting buffer");
-
-                if (luggage.Destination == "Bornholm")
+                if (luggage == null)
                 {
-                    Bornholm.Enqueue(luggage);
-                    Debug.WriteLine(luggage.Destination + " Sorted into Bornholm");
+                    return;
+                }
+                else
+                {
+                    if (luggage.Destination == "Bornholm")
+                    {
+                        Bornholm.Enqueue(luggage);
+                        Debug.WriteLine(luggage.Destination + " Sorted into Bornholm");
+                    }
+
+                    else if (luggage.Destination == "Kairo")
+                    {
+                        Kairo.Enqueue(luggage);
+                        Debug.WriteLine(luggage.Destination + " Sorted into Kairo");
+                    }
+
+                    else if (luggage.Destination == "Rom")
+                    {
+                        Rom.Enqueue(luggage);
+                        Debug.WriteLine(luggage.Destination + " Sorted into Rom");
+                    }
+
+                    else if (luggage.Destination == "Paris")
+                    {
+                        Paris.Enqueue(luggage);
+                        Debug.WriteLine(luggage.Destination + " Sorted into Paris");
+                    }
+                    SuitcaseSorted?.Invoke(this, new LuggageEventArgs(luggage));
+
                 }
 
-                else if (luggage.Destination == "Kairo")
-                {
-                    Kairo.Enqueue(luggage);
-                    Debug.WriteLine(luggage.Destination + " Sorted into Kairo");
-                }
-
-                else if (luggage.Destination == "Rom")
-                {
-                    Rom.Enqueue(luggage);
-                    Debug.WriteLine(luggage.Destination + " Sorted into Rom");
-                }
-
-                else if (luggage.Destination == "Paris")
-                {
-                    Paris.Enqueue(luggage);
-                    Debug.WriteLine(luggage.Destination + " Sorted into Paris");
-                }
-                SuitcaseSorted?.Invoke(this, new LuggageEventArgs(luggage));
-
-                await Task.Delay(TimeSpan.FromSeconds(1));
+                await Task.Delay(TimeSpan.FromSeconds(0.6));
             }
         }
 
-		public void GetLuggage()
-		{
-			//Get Luggage from Checkin.luggageQueue
-		}
-	}
+
+    }
 }

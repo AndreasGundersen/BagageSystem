@@ -1,13 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
   <Roots.PropertyPathNames>
-    <RootPropertyPathName Name="SortedSuitcasesRom" />
+    <RootPropertyPathName Name="LoadedSuitcases" />
     <RootPropertyPathName Name="SerialNumber" />
+    <RootPropertyPathName Name="Destination" />
+    <RootPropertyPathName Name="SortedSuitcasesRom" />
     <RootPropertyPathName Name="SortedSuitcasesParis" />
     <RootPropertyPathName Name="SortedSuitcasesKairo" />
     <RootPropertyPathName Name="SortedSuitcasesBornholm" />
     <RootPropertyPathName Name="Suitcases" />
-    <RootPropertyPathName Name="Destination" />
     <RootPropertyPathName Name="ActualWidth" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
@@ -46,24 +47,17 @@
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
       <RootProperty Name="Height" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+    <RootType FullName="Windows.UI.Xaml.Controls.RichTextBlock">
       <RootProperty Name="Margin" />
-      <RootProperty Name="Foreground" />
       <RootProperty Name="FontFamily" />
       <RootProperty Name="FontSize" />
-      <RootProperty Name="Text" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="TextAlignment" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Blocks" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListBox">
       <RootProperty Name="HorizontalContentAlignment" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
       <RootProperty Name="ItemsSource" />
-      <RootProperty Name="Foreground" />
       <RootProperty Name="Background" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
@@ -77,9 +71,20 @@
       <RootProperty Name="Template" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
-      <RootProperty Name="Children" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="TextAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="VerticalAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Documents.Paragraph">
+      <RootProperty Name="Inlines" />
     </RootType>
     <RootType FullName="ComeFlyWithMe.MainPage" />
   </Roots.RootTypes>

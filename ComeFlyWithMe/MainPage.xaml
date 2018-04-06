@@ -25,70 +25,91 @@
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="75"/>
                     <RowDefinition Height="*" />
                     <RowDefinition Height="250" />
                 </Grid.RowDefinitions>
-                <TextBlock Margin="12" Grid.Column="1" Grid.Row="0" Foreground="White" FontFamily="Assets\Fonts\Airport.otf#Airport" FontSize="20" Text="Sorted for Bornholm"/>
-                <TextBlock Margin="12" Grid.Column="2" Grid.Row="0" Foreground="White" FontFamily="Assets\Fonts\Airport.otf#Airport" FontSize="20" Text="Sorted for Kairo"/>
-                <TextBlock Margin="12" Grid.Column="3" Grid.Row="0" Foreground="White" FontFamily="Assets\Fonts\Airport.otf#Airport" FontSize="20" Text="Sorted for Paris"/>
-                <TextBlock Margin="12" Grid.Column="4" Grid.Row="0" Foreground="White" FontFamily="Assets\Fonts\Airport.otf#Airport" FontSize="20" Text="Sorted for Rom"/>
-                <ListBox HorizontalContentAlignment="Center" Grid.Column="0" Grid.Row="1" Width="550" Height="750" ItemsSource="{Binding Suitcases}" Foreground="White"  SelectionChanged="ListBox_SelectionChanged" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <RichTextBlock Margin="12" Grid.Column="1" Grid.Row="0"  FontFamily="Assets\Fonts\Solari.ttf#Solari" FontSize="18">
+                    <Paragraph>Sorted for
+                         Bornholm
+                    </Paragraph>
+                </RichTextBlock>
+                <RichTextBlock Margin="12" Grid.Column="2" Grid.Row="0"  FontFamily="Assets\Fonts\Solari.ttf#Solari" FontSize="18">
+                    <Paragraph>Sorted for Kairo</Paragraph>
+                </RichTextBlock>
+                <RichTextBlock Margin="12" Grid.Column="3" Grid.Row="0"  FontFamily="Assets\Fonts\Solari.ttf#Solari" FontSize="18">
+                    <Paragraph>Sorted for Paris</Paragraph>
+                </RichTextBlock>
+                <RichTextBlock Margin="12" Grid.Column="4" Grid.Row="0"  FontFamily="Assets\Fonts\Solari.ttf#Solari" FontSize="18">
+                    <Paragraph>Sorted for Rom</Paragraph>
+                </RichTextBlock>
+                <ListBox HorizontalContentAlignment="Center" Grid.Column="0" Grid.Row="1" Width="550" Height="750" ItemsSource="{Binding Suitcases}"  SelectionChanged="ListBox_SelectionChanged" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-                                <TextBlock TextAlignment="Center" HorizontalAlignment="Center" FontFamily="Assets\Fonts\Airport.otf#Airport" FontSize="30" Text="Luggage to: " VerticalAlignment="Center"/>
-                                <TextBlock TextAlignment="Center" HorizontalAlignment="Center" FontFamily="Assets\Fonts\Airport.otf#Airport" FontSize="30" Text="{Binding Destination}" VerticalAlignment="Center" />
-                                <TextBlock TextAlignment="Center" HorizontalAlignment="Center" FontFamily="Assets\Fonts\Airport.otf#Airport" FontSize="30" Text="With serialnumber: " VerticalAlignment="Center" />
-                                <TextBlock TextAlignment="Center" HorizontalAlignment="Center" FontFamily="Assets\Fonts\Airport.otf#Airport" FontSize="30" Text="{Binding SerialNumber}" VerticalAlignment="Center" />
+                                <TextBlock TextAlignment="Center" HorizontalAlignment="Center" FontFamily="Assets\Fonts\Solari.ttf#Solari" FontSize="30" Text="Luggage to: " VerticalAlignment="Center"/>
+                                <TextBlock TextAlignment="Center" HorizontalAlignment="Center" FontFamily="Assets\Fonts\Solari.ttf#Solari" FontSize="30" Text="{Binding Destination}" VerticalAlignment="Center" />
+                                <TextBlock TextAlignment="Center" HorizontalAlignment="Center" FontFamily="Assets\Fonts\Solari.ttf#Solari" FontSize="30" Text="With serialnumber: " VerticalAlignment="Center" />
+                                <TextBlock TextAlignment="Center" HorizontalAlignment="Center" FontFamily="Assets\Fonts\Solari.ttf#Solari" FontSize="30" Text="{Binding SerialNumber}" VerticalAlignment="Center" />
                             </StackPanel>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
                 </ListBox>
 
-                <ListBox Grid.Column="1" Grid.Row="1" ItemsSource="{Binding SortedSuitcasesBornholm}" Foreground="White"  SelectionChanged="ListBox_SelectionChanged" Background="Transparent">
+                <ListBox Grid.Column="1" Grid.Row="1" ItemsSource="{Binding SortedSuitcasesBornholm}"   SelectionChanged="ListBox_SelectionChanged" Background="Transparent">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel>
-                                <TextBlock FontFamily="Assets\Fonts\Airport.otf#Airport" FontSize="30" Text="{Binding SerialNumber}" />
+                                <TextBlock FontFamily="Assets\Fonts\Solari.ttf#Solari" FontSize="30" Text="{Binding SerialNumber}" />
                             </StackPanel>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
                 </ListBox>
 
-                <ListBox Grid.Column="2" Grid.Row="1" ItemsSource="{Binding SortedSuitcasesKairo}" Foreground="White"  SelectionChanged="ListBox_SelectionChanged" Background="Transparent">
+                <ListBox Grid.Column="2" Grid.Row="1" ItemsSource="{Binding SortedSuitcasesKairo}"   SelectionChanged="ListBox_SelectionChanged" Background="Transparent">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel>
-                                <TextBlock FontFamily="Assets\Fonts\Airport.otf#Airport" FontSize="30" Text="{Binding SerialNumber}" />
+                                <TextBlock FontFamily="Assets\Fonts\Solari.ttf#Solari" FontSize="30" Text="{Binding SerialNumber}" />
                             </StackPanel>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
                 </ListBox>
 
-                <ListBox Grid.Column="3" Grid.Row="1" ItemsSource="{Binding SortedSuitcasesParis}" Foreground="White"  SelectionChanged="ListBox_SelectionChanged" Background="Transparent">
+                <ListBox Grid.Column="3" Grid.Row="1" ItemsSource="{Binding SortedSuitcasesParis}"  SelectionChanged="ListBox_SelectionChanged" Background="Transparent">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel>
-                                <TextBlock FontFamily="Assets\Fonts\Airport.otf#Airport" FontSize="30" Text="{Binding SerialNumber}" />
+                                <TextBlock FontFamily="Assets\Fonts\Solari.ttf#Solari" FontSize="30" Text="{Binding SerialNumber}" />
                             </StackPanel>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
                 </ListBox>
 
-                <ListBox Grid.Column="4" Grid.Row="1" ItemsSource="{Binding SortedSuitcasesRom}" Foreground="White"  SelectionChanged="ListBox_SelectionChanged" Background="Transparent">
+                <ListBox Grid.Column="4" Grid.Row="1" ItemsSource="{Binding SortedSuitcasesRom}"  SelectionChanged="ListBox_SelectionChanged" Background="Transparent">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel>
-                                <TextBlock FontFamily="Assets\Fonts\Airport.otf#Airport" FontSize="30" Text="{Binding SerialNumber}" />
+                                <TextBlock FontFamily="Assets\Fonts\Solari.ttf#Solari" FontSize="30" Text="{Binding SerialNumber}" />
                             </StackPanel>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
                 </ListBox>
 
-                <TextBlock Grid.Column="2" Grid.Row="1" Width="550" Height="750">
+                <ListBox HorizontalContentAlignment="Center" Grid.Column="5" Grid.Row="1" Width="550" Height="750" ItemsSource="{Binding LoadedSuitcases}"   SelectionChanged="ListBox_SelectionChanged" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                                <!--<TextBlock TextAlignment="Center" HorizontalAlignment="Center" FontFamily="Assets\Fonts\Airport.otf#Airport" FontSize="30" Text="Luggage to: " VerticalAlignment="Center"/>-->
+                                <TextBlock TextAlignment="Center" HorizontalAlignment="Center" FontFamily="Assets\Fonts\Solari.ttf#Solari" FontSize="30" Text="{Binding Destination}" VerticalAlignment="Center" />
+                                <!--<TextBlock TextAlignment="Center" HorizontalAlignment="Center" FontFamily="Assets\Fonts\Airport.otf#Airport" FontSize="30" Text="With serialnumber: " VerticalAlignment="Center" />-->
+                                <TextBlock TextAlignment="Center" HorizontalAlignment="Center" FontFamily="Assets\Fonts\Solari.ttf#Solari" FontSize="30" Text="{Binding SerialNumber}" VerticalAlignment="Center" />
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
 
-                </TextBlock>
+
             </Grid>
         </Canvas>
     </Grid>

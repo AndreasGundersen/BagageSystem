@@ -61,12 +61,12 @@ namespace ComeFlyWithMe.Model
 				//Tells the ViewModel that a Suitcase arrived
                 SuitcaseArrived?.Invoke(this, new LuggageEventArgs(luggage));
 
-				//Debug for testing purposes
+                //Debug for testing purposes
                 Debug.WriteLine("Luggage for " + Destinations[num] + " " + id);
-                
-               
-				//await task to wait with more luggage
-				await Task.Delay(TimeSpan.FromSeconds(1));
+
+
+                //await task to wait with more luggage
+                await Task.Delay(TimeSpan.FromSeconds(1));
 
 
 			}

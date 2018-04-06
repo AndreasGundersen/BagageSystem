@@ -19,6 +19,7 @@ namespace ComeFlyWithMe.Modelview
         private ObservableCollection<Luggage> sortedSuitcasesKairo;
         private ObservableCollection<Luggage> sortedSuitcasesParis;
         private ObservableCollection<Luggage> sortedSuitcasesRom;
+        private ObservableCollection<Luggage> loadedSuitcases;
 
         public ObservableCollection<Luggage> Suitcases
         {
@@ -83,6 +84,19 @@ namespace ComeFlyWithMe.Modelview
             }
         }
 
+        public ObservableCollection<Luggage> LoadedSuitcases
+        {
+            get
+            {
+                return loadedSuitcases;
+            }
+            set
+            {
+                loadedSuitcases = value;
+                OnPropertyChanged(/*"LoadedSuitcases"*/);
+            }
+        }
+
         //Constucter for ViewModel
         public ViewModel()
         {
@@ -95,24 +109,36 @@ namespace ComeFlyWithMe.Modelview
             Suitcases = new ObservableCollection<Luggage>();
 
 
+
             SortingMachine sorter = new SortingMachine(checkIn1.luggageQueue);
             sorter.SuitcaseSorted += OnSuitcaseSorted;
             SortedSuitcasesBornholm = new ObservableCollection<Luggage>();
             SortedSuitcasesKairo = new ObservableCollection<Luggage>();
             SortedSuitcasesParis = new ObservableCollection<Luggage>();
             SortedSuitcasesRom = new ObservableCollection<Luggage>();
+            LoadedSuitcases = new ObservableCollection<Luggage>();
 
+            LoadLuggage loader = new LoadLuggage();
+            loader.LuggageLoaded += OnLuggageLoaded;
 
-            Task t3 = new Task(sorter.Sort);
 
             //Task to generate new Luggage
             Task t1 = new Task(checkIn1.GenerateLuggage);
             Task t2 = new Task(checkIn1.GenerateLuggage);
+            Task t3 = new Task(sorter.Sort);
+            Task t4 = new Task(delegate { loader.Load(sorter.Bornholm); });
+            Task t5 = new Task(delegate { loader.Load(sorter.Kairo); });
+            Task t6 = new Task(delegate { loader.Load(sorter.Paris); });
+            Task t7 = new Task(delegate { loader.Load(sorter.Rom); });
 
             //Starts the Task
             t1.Start();
             t2.Start();
             t3.Start();
+            t4.Start();
+            t5.Start();
+            t6.Start();
+            t7.Start();
         }
 
         private async void OnSuitcaseArrived(object sender, EventArgs e)
@@ -152,7 +178,44 @@ namespace ComeFlyWithMe.Modelview
         {
             SortedSuitcasesRom.Insert(0, lea.Luggage);
         }
-        
+        Suitcases.Remove(lea.Luggage);
+
+    });
+        }
+
+        private async void OnLuggageLoaded(object sender, EventArgs e)
+        {
+            LuggageEventArgs llea = (LuggageEventArgs)e;
+
+            //No idea what this does, but it fixes the crash
+            await Windows.ApplicationModel.Core.CoreApplication.MainView.CoreWindow.Dispatcher.RunAsync(CoreDispatcherPriority.Normal,
+    () =>
+    {
+        //Inserts the Luggage with its own parameters into the Collection
+        LoadedSuitcases.Insert(0, llea.Luggage);
+        if (llea.Luggage == null)
+        {
+            return;
+        }
+
+        else { 
+            if (llea.Luggage.Destination == "Bornholm")
+        {
+            SortedSuitcasesBornholm.Remove(llea.Luggage);
+        }
+        else if (llea.Luggage.Destination == "Kairo")
+        {
+            SortedSuitcasesKairo.Remove(llea.Luggage);
+        }
+        else if (llea.Luggage.Destination == "Paris")
+        {
+            SortedSuitcasesParis.Remove(llea.Luggage);
+        }
+        else if (llea.Luggage.Destination == "Rom")
+        {
+            SortedSuitcasesRom.Remove(llea.Luggage);
+        }
+        }
     });
         }
 
