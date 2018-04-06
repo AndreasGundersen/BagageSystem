@@ -376,6 +376,30 @@
     <AppxPackagedFile Include="C:\Users\hqk200.UNICPH.000\source\repos\ComeFlyWithMe\BagageSystem\ComeFlyWithMe\Assets\Fonts\Solari.ttf">
       <PackagePath>Assets\Fonts\Solari.ttf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hqk200.UNICPH.000\source\repos\ComeFlyWithMe\BagageSystem\ComeFlyWithMe\Assets\Fonts\Ubuntu-Bold.ttf">
+      <PackagePath>Assets\Fonts\Ubuntu-Bold.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hqk200.UNICPH.000\source\repos\ComeFlyWithMe\BagageSystem\ComeFlyWithMe\Assets\Fonts\Ubuntu-BoldItalic.ttf">
+      <PackagePath>Assets\Fonts\Ubuntu-BoldItalic.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hqk200.UNICPH.000\source\repos\ComeFlyWithMe\BagageSystem\ComeFlyWithMe\Assets\Fonts\Ubuntu-Italic.ttf">
+      <PackagePath>Assets\Fonts\Ubuntu-Italic.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hqk200.UNICPH.000\source\repos\ComeFlyWithMe\BagageSystem\ComeFlyWithMe\Assets\Fonts\Ubuntu-Light.ttf">
+      <PackagePath>Assets\Fonts\Ubuntu-Light.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hqk200.UNICPH.000\source\repos\ComeFlyWithMe\BagageSystem\ComeFlyWithMe\Assets\Fonts\Ubuntu-LightItalic.ttf">
+      <PackagePath>Assets\Fonts\Ubuntu-LightItalic.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hqk200.UNICPH.000\source\repos\ComeFlyWithMe\BagageSystem\ComeFlyWithMe\Assets\Fonts\Ubuntu-Medium.ttf">
+      <PackagePath>Assets\Fonts\Ubuntu-Medium.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hqk200.UNICPH.000\source\repos\ComeFlyWithMe\BagageSystem\ComeFlyWithMe\Assets\Fonts\Ubuntu-MediumItalic.ttf">
+      <PackagePath>Assets\Fonts\Ubuntu-MediumItalic.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hqk200.UNICPH.000\source\repos\ComeFlyWithMe\BagageSystem\ComeFlyWithMe\Assets\Fonts\Ubuntu-Regular.ttf">
+      <PackagePath>Assets\Fonts\Ubuntu-Regular.ttf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hqk200.UNICPH.000\source\repos\ComeFlyWithMe\BagageSystem\ComeFlyWithMe\Assets\Plane.jpg">
       <PackagePath>Assets\Plane.jpg</PackagePath>
     </AppxPackagedFile>

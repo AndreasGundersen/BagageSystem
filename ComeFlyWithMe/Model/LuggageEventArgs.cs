@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ComeFlyWithMe.Model
 {
+    //Inherits from EventArgs
     class LuggageEventArgs : EventArgs
     {
         Luggage luggage;

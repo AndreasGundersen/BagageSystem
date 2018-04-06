@@ -104,8 +104,6 @@
     <Compile Include="Model\IdGen.cs" />
     <Compile Include="Model\Luggage.cs" />
     <Compile Include="Model\LuggageEventArgs.cs" />
-    <Compile Include="Model\Plane.cs" />
-    <Compile Include="Model\PlaneProducer.cs" />
     <Compile Include="Model\SortingMachine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Modelview\ViewModel.cs" />
@@ -117,6 +115,14 @@
     </AppxManifest>
     <Content Include="Assets\Fonts\Airport.otf" />
     <Content Include="Assets\Fonts\Solari.ttf" />
+    <Content Include="Assets\Fonts\Ubuntu-Bold.ttf" />
+    <Content Include="Assets\Fonts\Ubuntu-BoldItalic.ttf" />
+    <Content Include="Assets\Fonts\Ubuntu-Italic.ttf" />
+    <Content Include="Assets\Fonts\Ubuntu-Light.ttf" />
+    <Content Include="Assets\Fonts\Ubuntu-LightItalic.ttf" />
+    <Content Include="Assets\Fonts\Ubuntu-Medium.ttf" />
+    <Content Include="Assets\Fonts\Ubuntu-MediumItalic.ttf" />
+    <Content Include="Assets\Fonts\Ubuntu-Regular.ttf" />
     <None Include="ComeFlyWithMe_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>

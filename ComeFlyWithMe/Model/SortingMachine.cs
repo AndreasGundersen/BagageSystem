@@ -9,6 +9,8 @@ namespace ComeFlyWithMe.Model
 {
     class SortingMachine
     {
+
+        //Fields
         public Queue<Luggage> LuggageSort = new Queue<Luggage>();
 
         public Queue<Luggage> Bornholm = new Queue<Luggage>();
@@ -16,14 +18,16 @@ namespace ComeFlyWithMe.Model
         public Queue<Luggage> Paris = new Queue<Luggage>();
         public Queue<Luggage> Rom = new Queue<Luggage>();
 
-
+        //Constuctor
         public SortingMachine(Queue<Luggage> luggageSort)
         {
             LuggageSort = luggageSort;
         }
 
+        //Eventhandler that updates viewmodel
         public event EventHandler SuitcaseSorted;
 
+        //Method that takes luggage from checkin (if there are any) and sort it into our destinations.
         public async void Sort()
         {
             while (true)
@@ -70,7 +74,7 @@ namespace ComeFlyWithMe.Model
 
                 }
 
-                await Task.Delay(TimeSpan.FromSeconds(0.6));
+                await Task.Delay(TimeSpan.FromSeconds(1));
             }
         }
 

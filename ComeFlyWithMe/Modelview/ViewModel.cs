@@ -125,13 +125,15 @@ namespace ComeFlyWithMe.Modelview
             //Task to generate new Luggage
             Task t1 = new Task(checkIn1.GenerateLuggage);
             Task t2 = new Task(checkIn1.GenerateLuggage);
+            //Task to sort luggage into destinationqueues 
             Task t3 = new Task(sorter.Sort);
+            //Task to dequeue from destinationqueues 
             Task t4 = new Task(delegate { loader.Load(sorter.Bornholm); });
             Task t5 = new Task(delegate { loader.Load(sorter.Kairo); });
             Task t6 = new Task(delegate { loader.Load(sorter.Paris); });
             Task t7 = new Task(delegate { loader.Load(sorter.Rom); });
 
-            //Starts the Task
+            //Starts the Tasks
             t1.Start();
             t2.Start();
             t3.Start();

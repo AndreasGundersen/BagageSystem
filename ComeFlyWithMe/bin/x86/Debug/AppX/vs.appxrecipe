@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\hqk200.UNICPH.000\source\repos\ComeFlyWithMe\BagageSystem\ComeFlyWithMe\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-06T06:09:35.838</Modified>
+      <Modified>2018-04-06T07:12:12.112</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\hqk200.UNICPH.000\source\repos\ComeFlyWithMe\BagageSystem\ComeFlyWithMe\bin\x86\Debug\ComeFlyWithMe.exe">
       <PackagePath>entrypoint\ComeFlyWithMe.exe</PackagePath>
-      <Modified>2018-04-06T06:09:31.554</Modified>
+      <Modified>2018-04-06T07:12:11.108</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\NuGetPackages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -503,6 +503,38 @@
       <PackagePath>Assets\Fonts\Solari.ttf</PackagePath>
       <Modified>2018-04-05T10:57:47.361</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hqk200.UNICPH.000\source\repos\ComeFlyWithMe\BagageSystem\ComeFlyWithMe\Assets\Fonts\Ubuntu-Bold.ttf">
+      <PackagePath>Assets\Fonts\Ubuntu-Bold.ttf</PackagePath>
+      <Modified>2018-04-06T06:41:27.375</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hqk200.UNICPH.000\source\repos\ComeFlyWithMe\BagageSystem\ComeFlyWithMe\Assets\Fonts\Ubuntu-BoldItalic.ttf">
+      <PackagePath>Assets\Fonts\Ubuntu-BoldItalic.ttf</PackagePath>
+      <Modified>2018-04-06T06:41:27.391</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hqk200.UNICPH.000\source\repos\ComeFlyWithMe\BagageSystem\ComeFlyWithMe\Assets\Fonts\Ubuntu-Italic.ttf">
+      <PackagePath>Assets\Fonts\Ubuntu-Italic.ttf</PackagePath>
+      <Modified>2018-04-06T06:41:27.399</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hqk200.UNICPH.000\source\repos\ComeFlyWithMe\BagageSystem\ComeFlyWithMe\Assets\Fonts\Ubuntu-Light.ttf">
+      <PackagePath>Assets\Fonts\Ubuntu-Light.ttf</PackagePath>
+      <Modified>2018-04-06T06:41:27.408</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hqk200.UNICPH.000\source\repos\ComeFlyWithMe\BagageSystem\ComeFlyWithMe\Assets\Fonts\Ubuntu-LightItalic.ttf">
+      <PackagePath>Assets\Fonts\Ubuntu-LightItalic.ttf</PackagePath>
+      <Modified>2018-04-06T06:41:27.416</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hqk200.UNICPH.000\source\repos\ComeFlyWithMe\BagageSystem\ComeFlyWithMe\Assets\Fonts\Ubuntu-Medium.ttf">
+      <PackagePath>Assets\Fonts\Ubuntu-Medium.ttf</PackagePath>
+      <Modified>2018-04-06T06:41:27.424</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hqk200.UNICPH.000\source\repos\ComeFlyWithMe\BagageSystem\ComeFlyWithMe\Assets\Fonts\Ubuntu-MediumItalic.ttf">
+      <PackagePath>Assets\Fonts\Ubuntu-MediumItalic.ttf</PackagePath>
+      <Modified>2018-04-06T06:41:27.432</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hqk200.UNICPH.000\source\repos\ComeFlyWithMe\BagageSystem\ComeFlyWithMe\Assets\Fonts\Ubuntu-Regular.ttf">
+      <PackagePath>Assets\Fonts\Ubuntu-Regular.ttf</PackagePath>
+      <Modified>2018-04-06T06:41:27.440</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hqk200.UNICPH.000\source\repos\ComeFlyWithMe\BagageSystem\ComeFlyWithMe\Assets\Plane.jpg">
       <PackagePath>Assets\Plane.jpg</PackagePath>
       <Modified>2018-04-05T06:38:55.289</Modified>
@@ -547,7 +579,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hqk200.UNICPH.000\source\repos\ComeFlyWithMe\BagageSystem\ComeFlyWithMe\bin\x86\Debug\ComeFlyWithMe.xr.xml">
       <PackagePath>ComeFlyWithMe.xr.xml</PackagePath>
-      <Modified>2018-04-05T11:27:24.974</Modified>
+      <Modified>2018-04-06T06:52:33.050</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -556,11 +588,11 @@
     <AppxPackagedFile Include="C:\Users\hqk200.UNICPH.000\source\repos\ComeFlyWithMe\BagageSystem\ComeFlyWithMe\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-06T06:09:34.920</Modified>
+      <Modified>2018-04-06T07:12:11.719</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hqk200.UNICPH.000\source\repos\ComeFlyWithMe\BagageSystem\ComeFlyWithMe\bin\x86\Debug\Core\ComeFlyWithMe.exe">
       <PackagePath>ComeFlyWithMe.exe</PackagePath>
-      <Modified>2018-04-06T06:09:35.803</Modified>
+      <Modified>2018-04-06T07:12:12.087</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -1,6 +1,14 @@
 WinMetadata\Windows.winmd
 Assets\Fonts\Airport.otf
 Assets\Fonts\Solari.ttf
+Assets\Fonts\Ubuntu-Bold.ttf
+Assets\Fonts\Ubuntu-BoldItalic.ttf
+Assets\Fonts\Ubuntu-Italic.ttf
+Assets\Fonts\Ubuntu-Light.ttf
+Assets\Fonts\Ubuntu-LightItalic.ttf
+Assets\Fonts\Ubuntu-Medium.ttf
+Assets\Fonts\Ubuntu-MediumItalic.ttf
+Assets\Fonts\Ubuntu-Regular.ttf
 Assets\LockScreenLogo.scale-200.png
 Assets\Plane.jpg
 Assets\SplashScreen.scale-200.png
